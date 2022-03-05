@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <form action="mailto:sandeshsingla99@gmail.com" method="post" enctype="text/plain">
+    <h1>Payment Form</h1>
+    <p>Required Fields are followed by *</p>
+    <h2>Contact Information</h2>
+    <p>Name: *<input type="text" name="your_name"  required> </p>
+    <fieldset>
+        <legend>Gender: *</legend>
+        <p>
+            <input type="radio" name="gender" id="Male"  required> Male
+            <input type="radio" name="gender" id="Female"  required> Female 
+            <input type="radio" name="gender" id="others"  required> Others 
+        </p>
+    </fieldset>
+
+    <P>Address: <textarea name="address" id="address" cols="80" rows="8"></textarea></P>
+    <p>Email: *<input type="email" name="email" id="email"  required></p>
+   
+    <p>Pincode: *<input type="number" name="pincode" id="pincode" required></p>
+    <h2>Payment Information</h2>
+    <p>Card Type: * 
+        <select name="card_type" id="card_type"  required>
+            <option value="">--Select a Card Type--</option>
+            <option value="visa">visa</option>
+            <option value="mastercard">master card</option>
+            <option value="rupay">rupay</option>
+        </select>
+    </p>
+    <p>Card Number: *<input type="number" name="number" id="number"  required></p>
+    <p>Expiration Date: *<input type="date" name="exp_date" id="exp_date"  required></p>
+    <p>CVV: *<input type="password" name="cvv" id="cvv"  required></p>
+    <input type="submit" value="Pay Now">
+    <input type="reset" value="Reset">
+</form>
+</body>
+</html>
